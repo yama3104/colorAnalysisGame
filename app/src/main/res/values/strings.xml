@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">色彩マスター</string>
+    <string name="title_HTML"><font color="red">色</font><font color="green">彩</font>マスター</string>
+    <string name="rgb_string">(%d, %d, %d)</string>
+    <string name="point">誤差：%f</string>
+    <string name="back_to_title">タイトルに戻る</string>
+    <string name="admob_banner_sample">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_banner_id">ca-app-pub-6378485568392983/1338626858</string>
+    <string name="sp_max_correct">ChooseColor_max_correct</string>
+</resources>

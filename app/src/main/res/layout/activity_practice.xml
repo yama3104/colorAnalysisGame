@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.satoshi.coloranalysisgame.ColorView
+                android:id="@+id/correct_colorView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.satoshi.coloranalysisgame.ColorView
+                android:id="@+id/user_colorView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/correct_rgb_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="(0, 0, 0)" />
+
+            <TextView
+                android:id="@+id/user_rgb_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="(0, 0, 0)" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/score_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/change_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/simple_frame"
+                android:text="Chane Color" />
+
+            <Button
+                android:id="@+id/check_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Check The Answer"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/gradation_frame"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="6dp"
+            android:paddingRight="10dp"
+            android:weightSum="6">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <com.xw.repo.BubbleSeekBar
+                    android:id="@+id/r_bseekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:bsb_bubble_color="#f00"
+                    app:bsb_max="255"
+                    app:bsb_min="0"
+                    app:bsb_progress="0"
+                    app:bsb_second_track_color="#f00"
+                    app:bsb_thumb_color="#f00"
+                    app:bsb_touch_to_seek="true"
+                    app:bsb_track_color="#FFB4B4" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <com.xw.repo.BubbleSeekBar
+                    android:id="@+id/g_bseekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:bsb_bubble_color="#0f0"
+                    app:bsb_max="255"
+                    app:bsb_min="0"
+                    app:bsb_progress="0"
+                    app:bsb_second_track_color="#0f0"
+                    app:bsb_thumb_color="#0f0"
+                    app:bsb_touch_to_seek="true"
+                    app:bsb_track_color="#B4FFB4" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <com.xw.repo.BubbleSeekBar
+                    android:id="@+id/b_bseekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:bsb_bubble_color="#00f"
+                    app:bsb_max="255"
+                    app:bsb_min="0"
+                    app:bsb_progress="0"
+                    app:bsb_second_track_color="#00f"
+                    app:bsb_thumb_color="#00f"
+                    app:bsb_touch_to_seek="true"
+                    app:bsb_track_color="#B4B4FF" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

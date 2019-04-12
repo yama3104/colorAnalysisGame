@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TitleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradation"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:gravity="bottom|center">
+
+            <com.satoshi.coloranalysisgame.SquareLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/rgb_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/simple_frame"
+                    android:text="RGB当て\nゲーム"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="24sp" />
+            </com.satoshi.coloranalysisgame.SquareLayout>
+
+            <com.satoshi.coloranalysisgame.SquareLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/color_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/simple_frame"
+                    android:text="色当て\nゲーム"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="24sp" />
+            </com.satoshi.coloranalysisgame.SquareLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/practice_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/simple_frame"
+            android:text="練習"
+            android:textColor="@drawable/textcolor"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/title_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="タイトルへ戻る"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/admob_banner_sample" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

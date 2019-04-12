@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.satoshi.coloranalysisgame">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher_gradation"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_gradation"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6378485568392983~8955932463" />
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".TitleActivity"/>
+        <activity android:name=".MainResultActivity"/>
+        <activity android:name=".PracticeActivity" />
+        <activity android:name=".ChooseColorActivity" />
+        <activity android:name=".ChooseResultActivity" />
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
